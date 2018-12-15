@@ -1,4 +1,4 @@
-nginx-prodLB1 {
+node 'nginx-prodLB1' {
 
 include java::install
 
