@@ -1,4 +1,5 @@
 node default { 
+  include httpd::install
 
   notify { 'checkpoint-1':  
 
