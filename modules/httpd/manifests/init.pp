@@ -42,7 +42,7 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class httpd {
+class httpd inherits tomcat::params{
 
   include httpd::install
 

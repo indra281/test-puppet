@@ -1,4 +1,4 @@
-class httpd::install {
+class httpd::install inherits tomcat {
 
 package { 'httpd':
 ensure => absent,
@@ -6,7 +6,7 @@ ensure => absent,
 
 }
 
-package { ['ldap', 'nginx']:
+package { [ '$::tomcat::tomcat', 'nginx']:
 require => Package['httpd'],
 ensure => present,
 }
