@@ -1,12 +1,15 @@
-package { 'httpd':
+class httpd::install {
 
+package { 'httpd':
 ensure => present,
+
 
 }
 
 service { 'httpd':
-
-ensure => runnig,
 enable => true,
+ensure => running,
+}
 
 }
+
