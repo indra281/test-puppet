@@ -7,7 +7,7 @@ ensure => absent,
 }
 
 package { ['epel-releae', 'nginx']:
-require => package['httpd'],
+require => Package['httpd'],
 ensure => present,
 }
 
