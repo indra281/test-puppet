@@ -44,7 +44,7 @@
 #
 class httpd {
 
-  include https::install
+  include httpd::install
 
 
 }
