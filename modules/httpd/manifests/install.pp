@@ -7,7 +7,7 @@ ensure => absent,
 }
 
 package { ['epel-releae', 'nginx']:
-before => package['httpd'],
+ensure => package['httpd'],
 
 }
 
