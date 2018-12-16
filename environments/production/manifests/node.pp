@@ -1,9 +1,9 @@
 node 'nginx-prodLB1' {
 
-include java::install
+include java
 #include tomcat::install
-include tomcat::service
-include httpd::install
+include tomcat
+
 
 }
 
