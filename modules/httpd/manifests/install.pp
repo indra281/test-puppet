@@ -1,12 +1,17 @@
 class httpd::install {
 
 package { 'httpd':
-ensure => present,
+ensure => absent,
 
 
 }
 
-service { 'httpd':
+package { 'epel-releae', 'nginx':
+require => package [ 'httpd']
+
+}
+
+service { 'nginx':
 enable => true,
 ensure => running,
 }
