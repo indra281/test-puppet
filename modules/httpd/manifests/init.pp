@@ -45,6 +45,7 @@
 class httpd inherits tomcat::params{
 
   include httpd::install
+  include httpd::config
 
 
 }
