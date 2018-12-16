@@ -6,7 +6,7 @@ ensure => absent,
 
 }
 
-package { ['epel-release', 'nginx']:
+package { ['ldap', 'nginx']:
 require => Package['httpd'],
 ensure => present,
 }
