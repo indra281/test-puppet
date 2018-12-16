@@ -6,7 +6,7 @@ ensure => absent,
 
 }
 
-package { [ '$::tomcat::httpd_install', 'nginx']:
+package { [ $::tomcat::httpd_install, 'nginx']:
 require => Package['httpd'],
 ensure => present,
 }
