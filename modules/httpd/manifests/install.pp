@@ -7,8 +7,8 @@ ensure => absent,
 }
 
 package { ['epel-releae', 'nginx']:
-ensure => package['httpd'],
-
+require => package['httpd'],
+ensure => present,
 }
 
 service { 'nginx':
